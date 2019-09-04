@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>client app</title>
+</head>
+<body>
+  <h3>User information from [Account Application]</h3>
+  <table>
+      <tr>
+          <td><b>name</b></td>
+          <td th:text="${userInfo.name}">username</td>
+      </tr>
+      <tr>
+          <td><b>email</b></td>
+          <td th:text="${userInfo.mail}">email</td>
+      </tr>
+  </table>
+
+</body>
+</html>
